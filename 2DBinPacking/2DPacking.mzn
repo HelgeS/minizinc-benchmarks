@@ -37,8 +37,9 @@ array[Bins] of var 0..1: bin;
 array[Bins, Items] of var 0..1: item; 
 
     % The total number of bins has to be minimized
+var int: objective = sum(k in Bins)(bin[k]); 
 solve 
-     minimize sum(k in Bins)(bin[k]); 
+     minimize objective;
 
     % each item has to be packed
 constraint

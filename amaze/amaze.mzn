@@ -78,9 +78,10 @@ constraint forall(x in 1..X, y in 1..Y) (
     endif
 );
 
+var int: objective = sum(board);
 solve 
     :: int_search(array1d(1..(X + 2) * (Y + 2), board), input_order, indomain_min, complete)
-    minimize sum(board);
+    minimize objective;
 
 output [show_int(floor(log10(int2float(N)) + 1.0), board[x, y]) ++
        if x = X then "\n" else " " endif | y in 1..Y, x in 1..X

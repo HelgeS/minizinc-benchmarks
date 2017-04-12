@@ -107,9 +107,10 @@ constraint
 
 %%%%%%%%%%%%%%%%%%% OBJECTIVE FUNCTION %%%%%%%%%%%%%%%%%%%
 % Maximise the total tonnage for the set of ships.
+var int: objective = sum(ship in 1..NShips)(objective_function[ship]);
 solve
-    maximize sum(ship in 1..NShips)(objective_function[ship]);    
-    
+    maximize objective;
+
 array [1..NShips] of var int: objective_function = [ 
 		sum([ShipSails[i, t] * MaxSailingDraft_cm[t, i] * TonnesPerCmDraft[i] | t in 1..NTimeSlots])
         | i in 1..NShips

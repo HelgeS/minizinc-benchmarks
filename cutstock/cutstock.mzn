@@ -29,8 +29,9 @@ constraint
             sum(i in Items) ( items[k, i] * i_length[i] ) <= pieces[k] * L
         );
 
+var int: objective = sum(k in Pieces)(pieces[k]);
 solve 
-    minimize sum(k in Pieces)(pieces[k]);
+    minimize objective;
 
 output [
     "pieces = ", show(pieces), "\n",
