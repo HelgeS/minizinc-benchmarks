@@ -34,8 +34,8 @@ solve
     minimize objective;
 
 output [
-    "pieces = ", show(pieces), "\n",
-    "items = ", show(items), "\n"
+    "pieces = ", show(pieces), ";\n",
+    "items = ", show(items), ";\n"
 ];
 
 %-----------------------------------------------------------------------------%
