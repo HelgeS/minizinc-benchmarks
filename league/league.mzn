@@ -129,14 +129,14 @@ solve
 	])
 	minimize obj;
 
-output ["max_rank: " ++ show(max_rank)  ++ "\n"
-	++ "min_rank: " ++ show(min_rank) ++ "\n"
-	++ "card_of_league: " ++ show(card_of_league) ++ "\n"
-	++ "obj: " ++ show(obj) ++ "\n"
-	]
-	++ [show(assign_to[i])
-	    ++ ", " ++ "person: " ++ show(i)
-	    ++ ", " ++ "ranking: " ++ show(ranking[i])
-	    ++ ", " ++ "country: " ++ show(country[i])
-	    ++ "\n"
-	    | i in 1..n]
+%output ["max_rank: " ++ show(max_rank)  ++ "\n"
+%	++ "min_rank: " ++ show(min_rank) ++ "\n"
+%	++ "card_of_league: " ++ show(card_of_league) ++ "\n"
+%	++ "obj: " ++ show(obj) ++ "\n"
+%	]
+%	++ [show(assign_to[i])
+%	    ++ ", " ++ "person: " ++ show(i)
+%	    ++ ", " ++ "ranking: " ++ show(ranking[i])
+%	    ++ ", " ++ "country: " ++ show(country[i])
+%	    ++ "\n"
+%	    | i in 1..n]
