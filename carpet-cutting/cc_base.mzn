@@ -312,13 +312,13 @@ ann: search1 = seq_search([
     ]);
 
 output [
-    "RolLen    = ", show(RollLen), "\n",
-    "rm_vori   = ", show(rm_vori), "\n",
-    "rm_x      = ", show(rm_x), "\n",
-    "rm_y      = ", show(rm_y), "\n",
-    "rm_rec_x  = ", show(rm_rec_x), "\n",
-    "rm_rec_y  = ", show(rm_rec_y), "\n",
-    "st_rec_x  = ", show(st_rec_x), "\n",
-    "st_rec_y  = ", show(st_rec_y), "\n",
-    "objective = ", show(RollLen), "\n"
+    "RolLen    = ", show(RollLen), ";\n",
+    "rm_vori   = ", show(rm_vori), ";\n",
+    "rm_x      = ", show(rm_x), ";\n",
+    "rm_y      = ", show(rm_y), ";\n",
+    "rm_rec_x  = ", show(rm_rec_x), ";\n",
+    "rm_rec_y  = ", show(rm_rec_y), ";\n",
+    "st_rec_x  = ", show(st_rec_x), ";\n",
+    "st_rec_y  = ", show(st_rec_y), ";\n",
+    "objective = ", show(RollLen), ";\n"
 ];
