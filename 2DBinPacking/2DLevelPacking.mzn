@@ -54,4 +54,4 @@ constraint
         );
 
 output
-["Objective = "] ++ [show(sum( k in 1..N ) (z[k, k] ))] ++ ["\n"];
+["objective = ", show(objective), ";\n"];
