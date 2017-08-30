@@ -59,6 +59,6 @@ solve
     minimize objective;
 
 output [
-    "x = ", show(x), "\n",
-    "objective = ", show(objective),"\n"
+    "x = ", show(x), ";\n",
+    "objective = ", show(objective),";\n"
 ];
