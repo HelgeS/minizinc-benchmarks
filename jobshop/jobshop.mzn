@@ -125,8 +125,8 @@ constraint
 solve minimize t_end;
 
 output [
-    "job_task_start = ", show(job_task_start), "\n",
-    "t_end = ", show(t_end), "\n"
+    "job_task_start=", show(job_task_start), ";\n",
+    "t_end=", show(t_end), ";\n"
 ];
 
 %-----------------------------------------------------------------------------%
