@@ -35,7 +35,8 @@ solve
 
 output [
     "pieces = ", show(pieces), ";\n",
-    "items = ", show(items), ";\n"
+    "items = ", show(items), ";\n",
+    "objective = ", show(objective), ";\n"
 ];
 
 %-----------------------------------------------------------------------------%
