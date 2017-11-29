@@ -53,9 +53,7 @@ constraint forall(r in ROWS, c in COLS)(
 solve :: int_search([config[r,c] | r in ROWS, c in COLS], first_fail, indomain_min, complete)
 	  minimize totalheight;
 
-output ["(" ++ show(cellheight[r,c]) ++ ","++ show(cellwidth[r,c]) ++ ")" ++ if c == cols then "\n" else " " endif |
-		 r in ROWS, c in COLS] ++ 
-	   ["totalheight = ",show(totalheight), "\n"];
+output ["totalheight = ",show(totalheight), ";\n"];
 
 % data
 
