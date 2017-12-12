@@ -12,3 +12,43 @@ The benchmark set 'BL' is taken from following the publication.
     address = {Hingham, MA, USA},
 	publisher = {Kluwer Academic Publishers},
 }
+The benchmark set 'KSD15_d' is taken from following the publication.
+
+@article{Kone:ALM:11,
+	author = {Oumar Kon\'{e} and Christian Artigues and Pierre Lopez and Marcel Mongeau},
+	title = {Event-based MILP models for resource-constrained project scheduling problems},
+	journal = {Computers {\&} Operations Research},
+	volume = {38},
+	number = {1},
+	year = {2011},
+	pages = {3--13},
+	doi = {10.1016/j.cor.2009.12.011}
+}
+
+The benchmark set 'Pack_d' is taken from following the publication.
+
+@article{Kone:ALM:11,
+	author = {Oumar Kon\'{e} and Christian Artigues and Pierre Lopez and Marcel Mongeau},
+	title = {Event-based MILP models for resource-constrained project scheduling problems},
+	journal = {Computers {\&} Operations Research},
+	volume = {38},
+	number = {1},
+	year = {2011},
+	pages = {3--13},
+	doi = {10.1016/j.cor.2009.12.011}
+}
+
+The benchmark set 'Pack' is taken from following the publication.
+
+@article{Carlier:N:03,
+	author = "Jacques Carlier and Emmanuel N\'{e}ron",
+	title = "On linear lower bounds for the resource constrained project scheduling problem",
+	journal = "European Journal of Operational Research",
+	volume = "149",
+	number = "2",
+	pages = "314--324",
+	year = "2003",
+	issn = "0377-2217",
+	doi = "10.1016/S0377-2217(02)00763-4"
+}
+
