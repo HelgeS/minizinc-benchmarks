@@ -19,7 +19,7 @@ array[1..N] of int: ItemHeight;
 array [1..N, 1..N] of var int: x;
 array [1..N, 1..N] of var int: z;
 
-var int: objective = sum( k in 1..N ) (z[k, k] );
+var 0..N: objective = sum( k in 1..N ) (z[k, k] );
 solve minimize objective;
 
 constraint
