@@ -56,7 +56,7 @@ var int: objective =
 ann: boundestann;
 
 solve 
-    :: boundestann, 
+    :: boundestann 
     minimize objective;
 
 output [

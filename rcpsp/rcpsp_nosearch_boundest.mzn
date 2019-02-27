@@ -109,7 +109,7 @@ constraint
 ann: boundestann;
 
 solve
-   :: boundestann,
+   :: boundestann
    minimize objective;
 
 %-----------------------------------------------------------------------------%
