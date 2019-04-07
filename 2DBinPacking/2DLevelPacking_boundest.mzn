@@ -20,7 +20,13 @@ array [1..N, 1..N] of var int: x;
 array [1..N, 1..N] of var int: z;
 
 var 0..N: objective = sum( k in 1..N ) (z[k, k] );
-solve :: boundestann minimize objective;
+
+solve :: seq_search([
+    boundestann,
+    int_search(x, input_order, indomain_min, complete),
+    int_search(z, input_order, indomain_min, complete)
+    ]) 
+minimize objective;
 
 ann: boundestann;
 
