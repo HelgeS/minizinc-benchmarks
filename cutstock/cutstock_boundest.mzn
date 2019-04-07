@@ -33,8 +33,10 @@ var int: objective = sum(k in Pieces)(pieces[k]);
 
 ann: boundestann;
 
-solve :: boundestann
-    minimize objective;
+solve :: seq_search([
+    boundestann, 
+    int_search(items, largest, indomain_min, complete)
+]) minimize objective;
 
 output [
     "objective = ", show(objective), ";\n"

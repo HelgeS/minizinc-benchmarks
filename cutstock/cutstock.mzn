@@ -30,7 +30,7 @@ constraint
         );
 
 var int: objective = sum(k in Pieces)(pieces[k]);
-solve 
+solve :: int_search(items, largest, indomain_min, complete)
     minimize objective;
 
 output [
